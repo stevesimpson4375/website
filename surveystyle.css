@@ -1,0 +1,19 @@
+.container {
+	display: block;
+	width: -webkit-fit-content;
+
+	border-width: 3px;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+h2 {
+	text-align: center;
+}
+
+.subhead {
+	font-weight: bold;
+	text-align: center;
+}

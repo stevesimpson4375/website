@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+
+<!--
+Steve Simpson 21066092
+1/17/2015
+CIS337 M308
+Assignment 3.2, an html page with some JavaScript
+-->
+
+<head>
+	<title>Assignment 3.2</title>
+	<link rel = "stylesheet" type = "text/css" href = "styles/mystyle.css" />
+	<meta charset='utf-8'>
+
+    <script type = "text/javascript">
+	
+	/*This script takes data for the html inputs and determines pay.*/
+	
+	/*There are three functions to match the three employees*/
+	function figurePayOne(){
+	
+		/*The first if statement confirms that the input contain numbers. If they contain letters,
+		the text box for pay reads an error message*/
+		if(isNaN(document.form1.employeeOneHours.value) | isNaN(document.form1.employeeOneEarnings.value)){
+			document.form1.employeeOnePay.value = "Enter numbers only";
+			}
+		else {
+		
+			/*This if statement determines if overtime needs to be calculated or if the pay
+			can be determined by just multiplying time by hourly pay*/
+			if(document.form1.employeeOneHours.value < 40) {
+				document.form1.employeeOnePay.value = document.form1.employeeOneEarnings.value * document.form1.employeeOneHours.value;
+			}
+			else {
+				document.form1.employeeOnePay.value = document.form1.employeeOneEarnings.value * document.form1.employeeOneHours.value + document.form1.employeeOneEarnings.value/2 * (document.form1.employeeOneHours.value - 40);
+			};
+		};	
+	};
+	
+	function figurePayTwo(){
+		if(isNaN(document.form2.employeeTwoHours.value) | isNaN(document.form2.employeeTwoEarnings.value)){	
+			document.form2.employeeTwoPay.value = "Enter numbers only";
+			}
+		else {		
+			
+			if(document.form2.employeeTwoHours.value < 40) {
+				document.form2.employeeTwoPay.value = document.form2.employeeTwoEarnings.value * document.form2.employeeTwoHours.value;
+			}
+			else {
+				document.form2.employeeTwoPay.value = document.form2.employeeTwoEarnings.value * document.form2.employeeTwoHours.value + document.form2.employeeTwoEarnings.value/2 * (document.form2.employeeTwoHours.value - 40);
+			};
+		};
+	};
+	
+	function figurePayThree(){
+		if(isNaN(document.form3.employeeThreeHours.value) | isNaN(document.form3.employeeThreeEarnings.value)){	
+			document.form3.employeeThreePay.value = "Enter numbers only";
+			}
+		else {		
+			
+			if(document.form3.employeeThreeHours.value < 40) {
+				document.form3.employeeThreePay.value = document.form3.employeeThreeEarnings.value * document.form3.employeeThreeHours.value;
+			}
+			else {
+				document.form3.employeeThreePay.value = document.form3.employeeThreeEarnings.value * document.form3.employeeThreeHours.value + document.form3.employeeThreeEarnings.value/2 * (document.form3.employeeThreeHours.value - 40);
+			};
+		};	
+	};
+	
+
+	</script>
+	
+</head>
+
+<body>
+	<div id='container'>
+	
+		<nav>	
+			<a href='index.html'>	  
+				Back to Index		
+			</a>
+		</nav>
+	
+	
+	
+		<div id='employeeOne'>
+		
+			<h2 class='header'>Employee 1</h2>
+			<form name='form1'>
+			
+				<div class='label'>
+					<label for='empOneEarnings'>Enter the hourly rate:</label><br />		
+					<label for='empOneHours'>Enter the hours worked:</label><br />		
+					<label for='empOnePay'>The pay for this employee is:</label><br />			
+				</div>
+				
+				
+				<div class='entries'>
+					<input type='text' name='employeeOneEarnings' id='empOneEarnings'/><br />
+					<input type='text' name='employeeOneHours' id='empOneHours'/><br />
+					<input type='text' name='employeeOnePay' id='empOnePay'/><br />	
+					<input type='button' name='submit' value='Submit' onclick='figurePayOne()'/>
+					<input type='button' name='resetButton1' value='Reset' onclick='reset()' /><br />
+				</div>
+
+			</form>
+		</div>
+		
+		
+		<div id='employeeTwo'>
+			<h2 class='header'>Employee 2</h2>
+			<form name='form2'>
+			
+				<div class='label'>
+					<label for='empTwoEarnings'>Enter the hourly rate:</label><br />		
+					<label for='empTwoHours'>Enter the hours worked:</label><br />		
+					<label for='empTwoPay'>The pay for this employee is:</label><br />			
+				</div>
+				
+				
+				<div class='entries'>
+					<input type='text' name='employeeTwoEarnings' id='empTwoEarnings'/><br />
+					<input type='text' name='employeeTwoHours' id='empTwoHours'/><br />
+					<input type='text' name='employeeTwoPay' id='empTwoPay'/><br />	
+					<input type='button' name='submit2' value='Submit' onclick='figurePayTwo()'/>
+					<input type='button' name='resetButton2' value='Reset' onclick='reset()'/><br />
+				</div>
+
+			</form>
+		</div>
+		
+		<div id='employeeThree'>
+			<h2 class='header'>Employee 3</h2>
+			<form name='form3'>
+			
+				<div class='label'>
+					<label for='empThreeEarnings'>Enter the hourly rate:</label><br />		
+					<label for='empThreeHours'>Enter the hours worked:</label><br />		
+					<label for='empThreePay'>The pay for this employee is:</label><br />			
+				</div>
+				
+				
+				<div class='entries'>
+					<input type='text' name='employeeThreeEarnings' id='empThreeEarnings'/><br />
+					<input type='text' name='employeeThreeHours' id='empThreeHours'/><br />
+					<input type='text' name='employeeThreePay' id='empThreePay'/><br />	
+					<input type='button' name='submit3' value='Submit' onclick='figurePayThree()'/>
+					<input type='button' name='resetButton3' value='Reset' onclick='reset()'/><br />
+				</div>
+
+			</form>
+		</div>
+		
+		
+		<nav>	
+			<a href='index.html'>	  
+				Back to Index		
+			</a>
+		</nav>
+		
+	</div>
+</body>
+	
+</html>

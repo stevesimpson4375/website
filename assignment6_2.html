@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+
+<html xmlns='http://www.w3.org/1999/xhtml'>
+
+<!--
+Steve Simpson 21066092
+2/6/2015
+CIS337 M308
+Assignment 6.2, an xhtml page that accepts a name, addess, phone number, and zip code and uses PHP to verify the if the entered values are valid
+-->
+
+
+  <head>
+    <title>Assignment 6.2</title>
+	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+    <link rel='stylesheet' type='text/css' href='styles/mystyle.css' />
+  </head>
+<body>
+  
+	<div id='container'>
+  
+  		<div class='nav'>	
+			<a href='index.html'>
+			Back to Index		
+			</a>
+		</div>
+		
+		<h2 class='header'>Enter your information below</h2>
+		
+
+		
+		<form action="assignment6_2.php" method="post">
+		
+			<div>
+				<table class='PHPtable'>
+				
+					<tr>
+						<td><label for='name'>Name:</label></td>
+						<td><input type='text' name='name' id='name'/></td>
+					</tr>
+					
+					<tr>
+						<td><label for='address'>Address:</label></td>
+						<td><input type='text' name='address' id='address'/></td>
+					</tr>
+					
+					<tr>
+						<td><label for='phone'>Phone Number:</label></td>
+						<td><input type='text' name='phone' id='phone'/></td>
+					</tr>
+					
+					<tr>
+						<td><label for ='zip'>Zip Code:</label></td>	
+						<td><input type='text' name='zip' id='zip'/></td>
+					</tr>
+					
+					<tr>
+						<td><input type='submit' value='Submit'/></td>
+						<td><input type='reset' value='Reset'/></td>
+					</tr>
+				</table>
+			</div>			
+		</form>
+		
+		
+		<div class='nav'>	
+			<a href='index.html'>
+			Back to Index		
+			</a>
+		</div>
+
+	</div>	
+	
+</body>
+</html>
+

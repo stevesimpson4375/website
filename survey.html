@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<!--
+Steve Simpson 21066092
+1/29/2015
+CIS337 M308
+Assignment 5.2, an html survey that links to Perl to write to a file
+-->
+
+
+<html lang="en">
+	<head>
+		<title>Survey</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+	</head>
+	
+<body>
+	<div id="container">
+	
+		<nav>	
+			<a href='index.html'>	  
+				Back to Index		
+			</a>
+		</nav>
+	
+	
+		<h2 class='header'>Gaming Survey</h2>
+			
+			
+			<form method="POST" action="surveyperl.pl">
+				<div class='survey'>
+					
+					<table class='surveyTable'>
+						<tr>
+							<td>Do you play video games regularly now or in the past?</td>
+							<td><label>Yes<input type='radio' name='iGame' value='yes'></label></td>
+							<td><label>No<input type='radio' name='iGame' value='no'></label></td>
+						</tr>
+					</table>
+					
+					<hr />						
+					
+					<table class='surveyTable'>
+					
+						<tr>		
+							<td>How old are you?</td>
+							<td><input type="radio" name="age" id="16_20" value="16-20" />
+								<label for="16_20">16-20</label></td>
+							<td><input type="radio" name="age" id="21_25" value="21-25" />
+								<label for="21_25">21-25</label></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td><input type="radio" name="age" id="26-30" value="26-30" />
+								<label for="26-30">26-30</label></td>
+							<td><input type="radio" name="age" id="31_35" value="31-35" />
+								<label for="31_35">31-35</label></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="radio" name="age" id="36_40" value="36-40" />
+								<label for="36_40">36-40</label></td>
+							<td><input type="radio" name="age" id="41plus" value="40+" />
+								<label for="41plus">41+</label></td>
+						</tr>
+					</table>
+					
+					<hr />
+					
+					<table class='surveyTable'>				
+					
+							<tr>
+								<td>Do you consider yourself a gamer?</td>
+								<td><label>Yes<input type='radio' name='iThinkIGame' value='yes'></label></td>
+								<td><label>No<input type='radio' name='iThinkIGame' value='no'></label></td>
+							</tr>
+					</table>
+					
+					<hr />
+					
+					<table class='surveyTable'>	
+						
+							<tr>
+								<td>What was the first device you played games on?</td>
+								<td><input type='text' name='myDevice' id='device' /></td>
+							</tr>
+					
+					</table>
+				</div>
+				
+				<br />
+				
+				<h3 class='header'>Time to prove it! The rest of this survey will see if know some trivia about games.</h3>
+				
+				<br />
+			
+				<div class='survey'>
+				
+					<table class='surveyTable'>
+						<tr>
+							<td>What game series was originally going to be based on a Jean Claude Van Damme movie but could not secure the rights?</td>							
+							<td><label><input name='Q1' type='radio' value='Mortal Kombat' />Mortal Kombat</label></td>
+							<td><label><input name='Q1' type='radio' value='Street Fighter' />Street Fighter</label></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td><label><input name='Q1' type='radio' value='Tekken' />Tekken</label></td>
+							<td></td>
+						</tr>					
+					</table>
+					
+					<hr />
+					
+					<table class='surveyTable'>
+						<tr>
+							<td>What game was the predecessor of the Fallout series?</td>							
+							<td><label><input name='Q2' type='radio' value='2400 A.D.' />2400 A.D.</label></td>
+							<td><label><input name='Q2' type='radio' value='Wasteland' />Wasteland</label></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td><label><input name='Q2' type='radio' value='Beneath a Steel Sky'/>Beneath a Steel Sky</label></td>
+							<td></td>
+						</tr>					
+					
+					</table>
+					
+					<hr />
+					
+					<table class='surveyTable'>
+						<tr>
+							<td>What modern series is the focus of the online show called “Online Gamer”?</td>							
+							<td><label><input name='Q3' type='radio' value='Halo' />Halo</label></td>
+							<td><label><input name='Q3' type='radio' value='Gears of War' />Gears of War</label></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td><label><input name='Q3' type='radio' value='Call of Duty'/>Call of Duty</label></td>
+							<td></td>
+						</tr>						
+					</table>
+					
+					<hr />
+					
+					<table class='surveyTable'>
+						<tr>
+							<td>Which armor class rating would result in a higher likelihood of not being hit at all when considering THAC0?</td>							
+							<td><label><input name='Q4' type='radio' value='2' />2</label></td>
+							<td><label><input name='Q4' type='radio' value='10' />10</label></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td><label><input name='Q4' type='radio' value='15'/>15</label></td>
+							<td></td>
+						</tr>						
+					</table>
+					
+				</div>
+				
+				<h3 class='header'>Press Submit when finished or reset to start again</h3>
+				
+				<div class='submit'>						
+						
+					<p><input type="reset" name="reset" id="reset" value="Reset">	
+					<input type="submit" value='Submit'/></p>
+
+				</div>
+				
+			</form>
+			
+			
+
+		<nav>	
+			<a href='index.html'>	  
+				Back to Index		
+			</a>
+		</nav>
+		
+	</div>
+	
+</body>
+</html>

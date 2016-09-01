@@ -1,0 +1,180 @@
+/* mystyle.css - an external style sheet for use with myindex.html*/
+
+
+h1,h2,h3 {
+	margin: 0;
+}
+
+.header {
+	background-color: teal;
+	color: white;
+	text-align: center;
+}
+
+p {
+	padding-left: 10px;
+}
+
+body {
+	background: #999;
+}
+
+#container {
+	background-color: white;
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#assignmentLinks a {
+	font-weight: bold;
+}
+
+#assignmentLinks {
+	float: left;
+	width: 380px;
+	padding: 10px;
+}
+
+#pageDescription {
+	float: right;
+	width: 780px;
+	text-align: center;
+}
+
+#footer {
+	clear: both;
+}
+
+nav {
+	background-color: teal;
+	padding: 10px;
+	clear: both;
+}
+	
+nav a {
+	color: white;
+}
+
+#container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+#links ul {
+	list-style: none;
+}
+
+#header {
+	background-color: teal;
+	color: white;
+}
+
+#hobbyList {
+	width: 600px;
+	float: left;
+}
+
+#hobbyList h3 {
+	padding: 10px 0 0 10px;
+}
+
+#hobbyList li {
+	padding: 10% 0 18% 0;
+}
+
+#hobbyPics {
+	float: right;
+	padding: 5%;
+	height: auto;
+    width: 400px;
+	text-align: center;
+}
+
+#hobbyPics p {
+	margin-top: 0;
+	padding: 0 0 20px 0;
+
+}
+
+#honorableMentions {
+	clear: both;
+	width: 800px;
+	text-align: center;
+	margin: auto;
+	padding-top: 10px;
+}
+
+
+/*Items below are for the assignment 3.2, which is the JavaScript one*/
+
+#employeeOne {
+	padding: 1% 0 0 0;
+}
+
+#employeeTwo{
+	padding: 1% 0  0 0;
+	clear: both;
+}
+
+#employeeThree {
+	padding: 1% 0 0 0;
+	clear: both;
+}
+
+.label{
+	width: 200px;
+	float: left;
+	margin: 1% 1% 0 1%;
+	text-align: right;
+}
+
+.entries{
+	width:350px;
+	float: right;
+	margin: 1% 52% 0 0;
+}
+
+/*Items below are for the Perl survey assignment*/
+
+.survey {
+	width: 1000px;
+	padding: 0 100px 0 100px;
+}
+
+.tableHeader{
+	text-align: center;
+}
+
+.submit{
+	text-align: center;
+}
+
+.surveyTable {
+	margin-left: auto;
+    margin-right: auto;
+}
+
+/*Items below are for the PHP assignment 6.2*/
+
+.nav {
+	background-color: teal;
+	padding: 10px;
+	clear: both;
+}
+	
+.nav a {
+	color: white;
+}
+
+.PHPsubmit {
+	clear: both;
+	margin: 0 0 1% 19%;
+}
+
+.PHPtable {
+	margin-left: auto;
+    margin-right: auto;
+}

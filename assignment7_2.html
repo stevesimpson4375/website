@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<!--
+Steve Simpson 21066092
+1/29/2015
+CIS337 M308
+Assignment 7.2, an html survey that links to PHP to write to a file
+-->
+
+
+<html lang="en">
+	<head>
+		<title>Survey</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+	</head>
+	
+<body>
+	<div id="container">
+	
+		<nav>	
+			<a href='index.html'>	  
+				Back to Index		
+			</a>
+		</nav>
+	
+	
+		<h2 class='header'>Too much TV Survey</h2>
+			
+			
+			<form method="POST" action="assignment7_2.php">
+				<div class='survey'>
+					
+					<table class='surveyTable'>
+						<tr>
+							<td>Do you watch TV regularly now or in the past?</td>
+							<td><label>Yes<input type='radio' name='iTV' value='yes'></label></td>
+							<td><label>No<input type='radio' name='iTV' value='no'></label></td>
+						</tr>
+					</table>
+					
+					<hr />						
+					
+					<table class='surveyTable'>
+					
+						<tr>		
+							<td>How old are you?</td>
+							<td><input type="radio" name="age" id="16_20" value="16-20" />
+								<label for="16_20">16-20</label></td>
+							<td><input type="radio" name="age" id="21_25" value="21-25" />
+								<label for="21_25">21-25</label></td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td><input type="radio" name="age" id="26-30" value="26-30" />
+								<label for="26-30">26-30</label></td>
+							<td><input type="radio" name="age" id="31_35" value="31-35" />
+								<label for="31_35">31-35</label></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><input type="radio" name="age" id="36_40" value="36-40" />
+								<label for="36_40">36-40</label></td>
+							<td><input type="radio" name="age" id="41plus" value="40+" />
+								<label for="41plus">41+</label></td>
+						</tr>
+					</table>
+					
+					<hr />
+					
+					<table class='surveyTable'>				
+					
+							<tr>
+								<td>Do you consider addicted to TV?</td>
+								<td><label>Yes<input type='radio' name='addicted' value='yes'></label></td>
+								<td><label>No<input type='radio' name='addicted' value='no'></label></td>
+							</tr>
+					</table>
+					
+					<hr />
+					
+					<table class='surveyTable'>	
+						
+							<tr>
+								<td>What type and size television do you have?</td>
+								<td><input type='text' name='myDevice' id='device' /></td>
+							</tr>
+					
+					</table>
+				</div>
+				
+				<br />
+				
+				<h3 class='header'>Time to prove it! The rest of this survey will ask question to determine if you watch too much TV</h3>
+				
+				<br />
+			
+				<div class='survey'>
+				
+					<table class='surveyTable'>
+						<tr>
+							<td>Does you couch or favorite chair have a permanent indentation of where you sit?</td>							
+							<td><label><input name='Q1' type='radio' value='yes' />Yes </label></td>
+							<td><label><input name='Q1' type='radio' value='no' />no</label></td>
+						</tr>
+					
+					</table>
+					
+					<hr />
+					
+					<table class='surveyTable'>
+						<tr>
+							<td>Do you have more than one type of internet streaming video service that you pay for?</td>							
+							<td><label><input name='Q2' type='radio' value='yes' />Yes</label></td>
+							<td><label><input name='Q2' type='radio' value='no' />No</label></td>
+						</tr>					
+					
+					</table>
+					
+					<hr />
+					
+					<table class='surveyTable'>
+						<tr>
+							<td>Have you ever contacted Netflix about correcting the order of shows in a television series?</td>							
+							<td><label><input name='Q3' type='radio' value='yes' />Yes</label></td>
+							<td><label><input name='Q3' type='radio' value='no' />No</label></td>
+						</tr>
+						
+					</table>
+					
+					<hr />
+					
+					<table class='surveyTable'>
+						<tr>
+							<td>Do you have, or are seriously considering, a refrigerator in the same room as a television?</td>							
+							<td><label><input name='Q4' type='radio' value='yes' />Yes</label></td>
+							<td><label><input name='Q4' type='radio' value='no' />No</label></td>
+						</tr>
+					
+					</table>
+					
+				</div>
+				
+				<h3 class='header'>Press Submit when finished or reset to start again</h3>
+				
+				<div class='submit'>						
+						
+					<p><input type="reset" name="reset" id="reset" value="Reset">	
+					<input type="submit" value='Submit'/></p>
+
+				</div>
+				
+			</form>
+			
+			
+
+		<nav>	
+			<a href='index.html'>	  
+				Back to Index		
+			</a>
+		</nav>
+		
+	</div>
+	
+</body>
+</html>
