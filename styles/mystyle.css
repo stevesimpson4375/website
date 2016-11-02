@@ -178,3 +178,10 @@ nav a {
 	margin-left: auto;
     margin-right: auto;
 }
+
+/*The following styles are for my Hydraulic App*/
+.hydQuestion {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+}
