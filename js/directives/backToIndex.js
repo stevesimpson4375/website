@@ -1,9 +1,9 @@
-app.directive("hydQuestion", function () {
+app.directive("backToIndex", function () {
     return {
         restrict: 'E',
         scope: {
             info: '='
         },
-        templateUrl: 'js/directives/hydQuestion.html'
+        templateUrl: 'js/directives/backToIndex.html'
     };
 });
