@@ -33,7 +33,7 @@ body {
 #assignmentLinks {
 	float: left;
 	width: 380px;
-	padding: 10px;
+	padding: 30px;
 }
 
 #pageDescription {
@@ -184,4 +184,15 @@ nav a {
     margin-left: auto;
     margin-right: auto;
     text-align: right;
+}
+
+/*The following is for my update of my remake page*/
+.links {
+	float: right;
+	width: 380px;
+	padding: 30px;
+}
+
+.links a {
+	font-weight: bold;
 }
